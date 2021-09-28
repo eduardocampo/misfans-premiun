@@ -1,4 +1,4 @@
-import useUser from '../lib/Hooks/useUser'
+import useUser from '@/lib/Hooks/useUser'
 import Link from 'next/link'
 
 export default function Home() {

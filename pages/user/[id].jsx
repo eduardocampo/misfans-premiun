@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import useUser from '../../lib/Hooks/useUser'
+import useUser from '@/lib/Hooks/useUser'
 
 const Profile = () => {
   const {
