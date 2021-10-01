@@ -1,0 +1,29 @@
+.root_button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: var(--white);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.3s;
+  background-color: var(--primary-main);
+}
+
+.root_button:hover {
+  background-color: var(--primary-dark);
+}
+
+.outline_button {
+  border-color: var(--primary-main);
+  color: var(--primary-main);
+  border-width: 1px;
+  background-color: transparent;
+}
+.outline_button:hover {
+  background-color: var(--primary-light);
+}

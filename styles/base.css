@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 :root {
   --white: rgb(255, 255, 255);
+  --primary-main: rgba(79, 70, 229, 1);
+  --primary-dark: rgba(67, 56, 202, 1);
+  --primary-light: rgba(224, 231, 255, 1);
   --gray-100: #f3f4f6;
   --gray-200: #e5e7eb;
   --gray-500: #6b7280;
