@@ -6,7 +6,7 @@ const Skeleton = ({ variant }) => {
     <div
       className={cn('root_skeleton', {
         ['root_avatar']: variant === 'avatar',
-        ['root_text']: variant === 'text',
+        ['root_text_skeleton']: variant === 'text',
         ['root_card']: variant === 'card',
       })}
     ></div>

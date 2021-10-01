@@ -1,5 +1,12 @@
 .root_skeleton {
+  background-color: var(--gray-200);
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.root_text_skeleton {
+  height: 2rem;
+  width: 100%;
+  border-radius: var(--border-radius-base);
 }
 
 @keyframes pulse {
