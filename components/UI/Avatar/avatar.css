@@ -1,0 +1,17 @@
+.root_avatar {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 9999px;
+  border: 4px solid var(--white);
+}
+
+/*----------  sm mediaQuery  ----------*/
+@media (min-width: 640px) {
+  .root_avatar {
+    height: 8rem;
+    width: 8rem;
+  }
+}
+.root_avatar img {
+  border-radius: 9999px;
+}
