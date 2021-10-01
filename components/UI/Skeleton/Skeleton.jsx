@@ -8,6 +8,7 @@ const Skeleton = ({ variant }) => {
         ['root_avatar']: variant === 'avatar',
         ['root_text_skeleton']: variant === 'text',
         ['root_card']: variant === 'card',
+        ['root_button_skeleton']: variant === 'button',
       })}
     ></div>
   )

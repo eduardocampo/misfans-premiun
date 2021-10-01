@@ -8,6 +8,12 @@
   width: 100%;
   border-radius: var(--border-radius-base);
 }
+.root_button_skeleton {
+  height: 2.6rem;
+  min-width: 100%;
+  width: 100%;
+  border-radius: 9999px;
+}
 
 @keyframes pulse {
   0%,
