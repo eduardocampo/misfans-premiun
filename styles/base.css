@@ -8,6 +8,7 @@
   --gray-50: #f9fafb;
   --gray-100: #f3f4f6;
   --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
   --gray-500: #6b7280;
   --gray-900: #111827;
   --border-radius-base: 2px;
@@ -49,6 +50,8 @@ html {
 */
 
 body {
+  background-color: var(--gray-100);
+  color: var(--gray-900);
   margin: 0; /* 1 */
   line-height: inherit; /* 2 */
 }
@@ -311,6 +314,12 @@ Prevent resizing textareas horizontally by default.
 
 textarea {
   resize: vertical;
+}
+
+/*Remove border input*/
+input:focus-visible {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 /*

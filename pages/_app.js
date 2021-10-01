@@ -6,6 +6,7 @@ import '@/components/UI/Avatar/avatar.css'
 import '@/components/UI/Skeleton/skeleton.css'
 import '@/components/UI/Text/text.css'
 import '@/components/UI/Button/button.css'
+import '@/components/UI/Profile/profile.css'
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />

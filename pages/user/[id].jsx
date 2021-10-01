@@ -1,5 +1,7 @@
-import { useRouter } from 'next/router'
+import Container from '@/components/UI/Container/Container'
+import ProfileUser from '@/components/UI/Profile/ProfileUser'
 import useUser from '@/lib/Hooks/useUser'
+import { useRouter } from 'next/router'
 
 const Profile = () => {
   const {
@@ -12,10 +14,11 @@ const Profile = () => {
   console.log('data', user || [])
 
   return (
-    <div>
-      <div>User: id: {id}</div>
-      <div>{user.firstName}</div>
-    </div>
+    <Container>
+      <div className="shadow bg-white rounded-md">
+        <ProfileUser data={user} />
+      </div>
+    </Container>
   )
 }
 

@@ -1,0 +1,21 @@
+.profile_bg_image {
+  display: inline-flex;
+  height: 8rem;
+  width: 100%;
+}
+
+.profile_info {
+  margin-top: -3rem;
+}
+
+/*----------  lg mediaQuery  ----------*/
+@media (min-width: 1024px) {
+  .profile_bg_image {
+    height: 15rem;
+  }
+  .profile_info {
+    margin-top: -4rem;
+    display: flex;
+    align-items: flex-end;
+  }
+}

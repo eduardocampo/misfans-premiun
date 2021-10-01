@@ -8,12 +8,25 @@
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
+.pb-9 {
+  padding-bottom: 2.25rem;
+}
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 .mt-6 {
   margin-top: 1.5rem;
+}
+.pr-3 {
+  padding-right: 0.75rem;
+}
+
+.mr-5 {
+  margin-right: 1.25rem;
 }
 
 .z-10 {
@@ -24,6 +37,21 @@
 }
 .bg-gray-50 {
   background-color: var(--gray-50);
+}
+.bg-primary {
+  background-color: var(--primary-main);
+}
+.color-primary {
+  color: var(--primary-main);
+}
+.color-gray-200 {
+  color: var(--gray-200);
+}
+.color-gray-300 {
+  color: var(--gray-300);
+}
+.bg-white {
+  background-color: var(--white);
 }
 .color-gray-500 {
   color: var(--gray-500);
@@ -52,10 +80,87 @@
 .flex-shrink-0 {
   flex-shrink: 0;
 }
+.flex-1 {
+  flex: 1 1;
+}
+.flex-auto {
+  flex: 1 1 auto;
+}
+
+.flex-none {
+  flex: none;
+}
+.items-center {
+  align-items: center;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
 .text-center {
   text-align: center;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+.h-6 {
+  height: 1.5rem;
+}
+.border-t {
+  border-top-width: 1px;
+}
+
+.border-b {
+  border-bottom-width: 1px;
+}
+.border-color {
+  border-color: var(--gray-200);
+}
+.sticky {
+  position: sticky;
+}
+.top-0 {
+  top: 0px;
+}
+
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
+
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
+/*----------  sm mediaQuery  ----------*/
+
+@media (min-width: 640px) {
+  /*=============================================
+=       .sm\:class is a Selector Specificity   =
+=============================================*/
+  .sm\:flex {
+    display: flex;
+  }
+  .sm\:items-center {
+    align-items: center;
+  }
+  .sm\:justify-end {
+    justify-content: flex-end;
+  }
+  .sm\:flex-1 {
+    flex: 1 1;
+  }
+  .sm\:mr-5 {
+    margin-right: 1.25rem;
+  }
+  .sm\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+  .sm\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
 }
