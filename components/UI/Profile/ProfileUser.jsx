@@ -4,6 +4,7 @@ import Avatar from '../Avatar/Avatar'
 import Button from '../Button/Button'
 import Container from '../Container/Container'
 import Text from '../Text/Text'
+import ProfileInfo from './ProfileInfo'
 
 const ProfileUser = ({ data, bgImage }) => {
   return (
@@ -43,6 +44,7 @@ const ProfileUser = ({ data, bgImage }) => {
           </div>
         </Container>
       </div>
+      <ProfileInfo data={data} />
     </>
   )
 }
