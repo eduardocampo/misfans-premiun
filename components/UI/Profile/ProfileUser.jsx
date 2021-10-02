@@ -6,15 +6,12 @@ import Button from '../Button/Button'
 import Container from '../Container/Container'
 import Grid from '../Grid/Grid'
 import Post from '../Post/Post'
+import Skeleton from '../Skeleton/Skeleton'
 import Text from '../Text/Text'
 import ProfileInfo from './ProfileInfo'
 
 const ProfileUser = ({ data, bgImage }) => {
-  const { user, isError, isLoading } = useUser(data.id + '/post?limit=3')
-
-  if (isError) return <div>failed to load</div>
-  if (isLoading) return <div>loading...</div>
-  console.log('dataPost', user || [])
+  const { user, isLoading } = useUser(data.id + '/post?limit=3')
 
   return (
     <>
@@ -55,16 +52,28 @@ const ProfileUser = ({ data, bgImage }) => {
       </div>
       {/*Profile Info*/}
       <ProfileInfo data={data} />
+
       {/*Post section*/}
+
       <div className="border-t border-color py-5">
         <Container>
           <Text variant="h3">Post</Text>
           {/*Post*/}
           <div className="mt-3">
             <Grid>
-              {user.data.map((item) => (
-                <Post key={item.id} data={item} />
-              ))}
+              {/*Post skeleton*/}
+              {isLoading
+                ? [1, 2, 3, 4, 5].map((item) => (
+                    <div key={item} className="rounded-md  bg-gray-50">
+                      <div className="p-5 border border-color rounded-top-md">
+                        <Skeleton variant="text" />
+                      </div>
+                      <div className="profile_bg_image ">
+                        <Skeleton variant="bg_profile_image" />
+                      </div>
+                    </div>
+                  ))
+                : user.data.map((item) => <Post key={item.id} data={item} />)}
             </Grid>
           </div>
         </Container>
