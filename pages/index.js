@@ -13,6 +13,9 @@ export default function Home() {
   if (isLoading)
     return (
       <Container>
+        <div className="my-6">
+          <Skeleton variant="bg_profile_image" />
+        </div>
         <div className="shadow bg-white rounded-md">
           <Container>
             <div className="sm:flex sm:items-center sm:justify-end sm:flex-1">
