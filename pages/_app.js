@@ -7,9 +7,14 @@ import '@/components/UI/Skeleton/skeleton.css'
 import '@/components/UI/Text/text.css'
 import '@/components/UI/Button/button.css'
 import '@/components/UI/Profile/profile.css'
+import Layout from '@/components/UI/Layout'
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  )
 }
 
 export default MyApp
