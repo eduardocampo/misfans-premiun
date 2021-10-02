@@ -4,6 +4,7 @@ import CardProfile from '@/components/UI/Profile/CardProfile'
 import Skeleton from '@/components/UI/Skeleton/Skeleton'
 import Text from '@/components/UI/Text/Text'
 import useUser from '@/lib/Hooks/useUser'
+import Image from 'next/image'
 
 export default function Home() {
   const { user, isLoading, isError } = useUser()
@@ -57,6 +58,27 @@ export default function Home() {
   console.log('data', user || [])
   return (
     <Container>
+      <div
+        style={{ position: 'relative', height: '100%', width: '100%' }}
+        className="flex items-center justify-center"
+      >
+        <div style={{ position: 'absolute', zIndex: 30 }}>
+          <Text variant="h3" size="6xl" color="white">
+            Findity
+          </Text>
+        </div>
+        <div className="profile_bg_image my-6">
+          <Image
+            className="rounded-md"
+            layout="intrinsic"
+            objectFit="cover"
+            height="300"
+            width="1280"
+            src="/profile.jpg"
+            alt=""
+          />
+        </div>
+      </div>
       <div className="shadow bg-white rounded-md">
         {/*heading*/}
         <Container>

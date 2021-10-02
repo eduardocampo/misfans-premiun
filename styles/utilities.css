@@ -30,6 +30,10 @@
 .mt-6 {
   margin-top: 1.5rem;
 }
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
 .pr-3 {
   padding-right: 0.75rem;
 }
@@ -53,6 +57,10 @@
 .color-primary {
   color: var(--primary-main);
 }
+.color-white {
+  color: var(--white);
+}
+
 .color-gray-200 {
   color: var(--gray-200);
 }
@@ -112,6 +120,9 @@
 }
 .justify-end {
   justify-content: flex-end;
+}
+.justify-center {
+  justify-content: center;
 }
 
 .mx-auto {

@@ -10,7 +10,7 @@ const variantsMap = {
   body2: 'p',
 }
 
-const Text = ({ variant, color, transform, children }) => {
+const Text = ({ variant, color, size, transform, children }) => {
   const Component = variant ? variantsMap[variant] : 'div'
   return (
     <Component
@@ -22,9 +22,11 @@ const Text = ({ variant, color, transform, children }) => {
         ['body1']: variant === 'body1',
         ['body2']: variant === 'body2',
         ['color-gray-500']: color === '500',
+        ['color-white']: color === 'white',
         ['color-gray-900']: color === '900',
         ['capitalize']: transform === 'capitalize',
         ['uppercase']: transform === 'uppercase',
+        ['text-6xl']: size === '6xl',
       })}
     >
       {children}
