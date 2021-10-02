@@ -13,10 +13,9 @@ export default function Home() {
   if (isLoading)
     return (
       <Container>
-        <div className="my-6">
-          <Skeleton variant="bg_profile_image" />
-        </div>
-        <div className="shadow bg-white rounded-md">
+        <Skeleton variant="bg_profile_image" />
+
+        <div className="shadow bg-white">
           <Container>
             <div className="sm:flex sm:items-center sm:justify-end sm:flex-1">
               <div className="py-5 flex-1">
@@ -70,9 +69,8 @@ export default function Home() {
             Findity
           </Text>
         </div>
-        <div className="profile_bg_image my-6">
+        <div className="profile_bg_image">
           <Image
-            className="rounded-md"
             layout="intrinsic"
             objectFit="cover"
             height="300"
@@ -82,7 +80,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="shadow bg-white rounded-md">
+      <div className="shadow bg-white">
         {/*heading*/}
         <Container>
           <div className="sm:flex sm:items-center sm:justify-end sm:flex-1">
