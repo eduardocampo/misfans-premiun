@@ -28,9 +28,13 @@ export default function CardProfile({ data }) {
             </div>
           </a>
         </Link>
-        <div className="flex mt-6 flex-col">
-          <Button variant="outline">Follow</Button>
-        </div>
+        <Link href={{ pathname: '/user/[id]', query: { id: data.id } }}>
+          <a>
+            <div className="flex mt-6 flex-col">
+              <Button variant="outline">Follow</Button>
+            </div>
+          </a>
+        </Link>
       </Container>
     </div>
   )
