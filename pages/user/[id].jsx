@@ -13,18 +13,18 @@ const Profile = () => {
 
   if (isError)
     return (
-      <Container>
+      <Container variant="xl">
         <div className="shadow bg-white rounded-md">Error</div>
       </Container>
     )
   if (isLoading)
     return (
-      <Container>
+      <Container variant="xl" padding="0">
         <div className="shadow bg-white rounded-md">
           <>
             <div className="border-b border-color pb-9 top-0 z-20">
               <Skeleton variant="bg_profile_image" />
-              <Container>
+              <Container variant="xl">
                 <div className="profile_info">
                   <div className="flex sm:mr-5">
                     <Skeleton variant="avatar" />
@@ -38,13 +38,13 @@ const Profile = () => {
               </Container>
               <div className="pb-4">
                 <div className="py-5">
-                  <Container>
+                  <Container variant="xl">
                     <Skeleton variant="text" />
                     <Skeleton variant="text" />
                   </Container>
                 </div>
                 <div className="border-t border-color py-5">
-                  <Container>
+                  <Container variant="xl">
                     <Grid>
                       {[1, 2, 3, 4, 5].map((item) => (
                         <div key={item} className="sm:col-span-1">
@@ -63,7 +63,7 @@ const Profile = () => {
   console.log('data', user || [])
 
   return (
-    <Container>
+    <Container variant="xl" padding="0">
       <div className="shadow bg-white rounded-md">
         <ProfileUser data={user} />
       </div>

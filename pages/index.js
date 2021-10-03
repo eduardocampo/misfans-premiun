@@ -12,11 +12,11 @@ export default function Home() {
   if (isError) return <div>failed to load</div>
   if (isLoading)
     return (
-      <Container>
+      <Container variant="xl" padding="0">
         <Skeleton variant="bg_profile_image" />
 
         <div className="shadow bg-white">
-          <Container>
+          <Container variant="xl">
             <div className="sm:flex sm:items-center sm:justify-end sm:flex-1">
               <div className="py-5 flex-1">
                 <Text variant="h1">Profiles</Text>
@@ -27,7 +27,7 @@ export default function Home() {
             </div>
           </Container>
           <div className="py-5">
-            <Container>
+            <Container variant="xl">
               <div className="py-5">
                 <Grid variant="gridB">
                   {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item) => (
@@ -35,7 +35,7 @@ export default function Home() {
                       key={item}
                       className="shadow py-8 rounded-md bg-gray-50"
                     >
-                      <Container>
+                      <Container variant="xl">
                         <div className="flex flex-col text-center">
                           <div className="flex-shrink-0 mx-auto">
                             <Skeleton variant="avatar" />
@@ -59,7 +59,7 @@ export default function Home() {
     )
   console.log('data', user || [])
   return (
-    <Container>
+    <Container variant="xl" padding="0">
       <div
         style={{ position: 'relative', height: '100%', width: '100%' }}
         className="flex items-center justify-center"
@@ -82,7 +82,7 @@ export default function Home() {
       </div>
       <div className="shadow bg-white">
         {/*heading*/}
-        <Container>
+        <Container variant="xl">
           <div className="sm:flex sm:items-center sm:justify-end sm:flex-1">
             <div className="py-5 flex-1">
               <Text variant="h1">Profiles</Text>
@@ -95,7 +95,7 @@ export default function Home() {
 
         {/*search*/}
         <form className="sticky top-0 z-20 bg-white border-t border-b border-color">
-          <Container>
+          <Container variant="xl">
             <div className="flex">
               <label
                 htmlFor="search-input"
@@ -128,7 +128,7 @@ export default function Home() {
 
         {/*CARD*/}
         <div className="py-5">
-          <Container>
+          <Container variant="xl">
             <div className="py-5">
               <Grid variant="gridB">
                 {user.data.map((item) => (

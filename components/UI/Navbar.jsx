@@ -6,9 +6,9 @@ const Navbar = () => {
     <div>
       <header className="relative">
         <nav>
-          <Container>
+          <Container variant="xl" padding="0">
             <div className="bg-white shadow">
-              <Container>
+              <Container variant="xl">
                 <div className="h-16 flex items-center justify-between">
                   <div className="hidden lg:flex lg:items-center">
                     <Link href="/">

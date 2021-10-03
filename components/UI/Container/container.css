@@ -5,12 +5,18 @@
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.root_container_p_0 {
+  padding: 0px;
+}
 
 /*----------  sm mediaQuery  ----------*/
 @media (min-width: 640px) {
   .root_container {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+  .root_container_p_0 {
+    padding: 0px;
   }
 }
 
@@ -19,5 +25,8 @@
   .root_container {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+  .root_container_p_0 {
+    padding: 0px;
   }
 }

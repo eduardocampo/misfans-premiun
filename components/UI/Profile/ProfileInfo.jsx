@@ -7,7 +7,7 @@ const ProfileInfo = ({ data }) => {
   return (
     <div className="pb-4">
       <div className="py-5">
-        <Container>
+        <Container variant="xl">
           <Text variant="h3">Location</Text>
           <Text variant="body1" color="500">
             {data.location.country} - {data.location.city}
@@ -15,7 +15,7 @@ const ProfileInfo = ({ data }) => {
         </Container>
       </div>
       <div className="border-t border-color py-5">
-        <Container>
+        <Container variant="xl">
           <Grid>
             <div className="sm:col-span-1">
               <Text variant="body1" color="500">

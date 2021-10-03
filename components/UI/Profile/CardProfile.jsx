@@ -7,7 +7,7 @@ import Text from '../Text/Text'
 export default function CardProfile({ data }) {
   return (
     <div className="shadow py-8 rounded-md bg-gray-50">
-      <Container>
+      <Container variant="xl">
         <Link href={{ pathname: '/user/[id]', query: { id: data.id } }}>
           <a>
             <div className="flex flex-col text-center">

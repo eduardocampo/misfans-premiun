@@ -26,7 +26,7 @@ const ProfileUser = ({ data, bgImage }) => {
             alt=""
           />
         </div>
-        <Container>
+        <Container variant="xl">
           <div className="profile_info">
             <div className="flex sm:mr-5">
               <Avatar
@@ -56,7 +56,7 @@ const ProfileUser = ({ data, bgImage }) => {
       {/*Post section*/}
 
       <div className="border-t border-color py-5">
-        <Container>
+        <Container variant="xl">
           <Text variant="h3">Post</Text>
           {/*Post*/}
           <div className="mt-3">

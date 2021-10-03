@@ -8,6 +8,9 @@
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
+.p-0 {
+  padding: 0px;
+}
 .p-5 {
   padding: 1.25rem;
 }
@@ -211,5 +214,8 @@
   }
   .sm\:col-span-2 {
     grid-column: span 2 / span 2;
+  }
+  .sm\:p-0 {
+    padding: 0px;
   }
 }
