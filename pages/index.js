@@ -5,9 +5,13 @@ import Skeleton from '@/components/UI/Skeleton/Skeleton'
 import Text from '@/components/UI/Text/Text'
 import useUser from '@/lib/Hooks/useUser'
 import Image from 'next/image'
+import { useRef, useState } from 'react'
 
 export default function Home() {
   const { user, isLoading, isError } = useUser()
+  const [searchKey, setSearchKey] = useState('')
+  const [searchResults, setSearchResults] = useState([])
+  const inputSearch = useRef('')
 
   if (isError) return <div>failed to load</div>
   if (isLoading)
@@ -57,7 +61,24 @@ export default function Home() {
         </div>
       </Container>
     )
-  console.log('data', user || [])
+
+  //Easy search
+  const searchOnChange = () => {
+    setSearchKey(inputSearch.current.value)
+    if (searchKey !== '') {
+      const newUserFilter = user.data.filter((item) => {
+        return Object.values(item)
+          .join(' ')
+          .toLowerCase()
+          .includes(searchKey.toLowerCase())
+      })
+      setSearchResults(newUserFilter)
+    } else {
+      setSearchResults(user.data)
+    }
+  }
+
+  console.log('datasss', searchResults || [])
   return (
     <Container variant="xl" padding="0">
       <div
@@ -117,9 +138,12 @@ export default function Home() {
                 </svg>
               </label>
               <input
+                ref={inputSearch}
+                value={searchKey}
+                onChange={searchOnChange}
                 type="text"
                 id="search-input"
-                placeholder="Search all user"
+                placeholder="Sara, edita, roberto, carolina"
                 className="flex-auto py-5 text_body2 color-gray-500"
               />
             </div>
@@ -131,9 +155,13 @@ export default function Home() {
           <Container variant="xl">
             <div className="py-5">
               <Grid variant="gridB">
-                {user.data.map((item) => (
-                  <CardProfile key={item.id} data={item} />
-                ))}
+                {searchKey.length < 1
+                  ? user.data.map((item) => (
+                      <CardProfile key={item.id} data={item} />
+                    ))
+                  : searchResults.map((item) => (
+                      <CardProfile key={item.id} data={item} />
+                    ))}
               </Grid>
             </div>
           </Container>
