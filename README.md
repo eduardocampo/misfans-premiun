@@ -5,7 +5,7 @@
 Findity is an app to find the best profile
 This project was created with fast and intuitive development in place.
 
-Demo live at: [demo.vercel.store](https://demo.vercel.store/)
+Demo live at: [misfans-premiun.vercel.app](https://misfans-premiun.vercel.app/)
 
 ## Features
 
