@@ -1,34 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Feduardocampo%2Fmisfans-premiun&env=NEXT_PUBLIC_API_ID,NEXT_PUBLIC_API)
 
-## Getting Started
+# Findity
 
-First, run the development server:
+Findity is an app to find the best profile
+This project was created with fast and intuitive development in place.
 
-```bash
-npm run dev
-# or
-yarn dev
+Demo live at: [demo.vercel.store](https://demo.vercel.store/)
+
+## Features
+
+- Nextjs
+- SWR Hooks
+- UI Components
+- Search
+- Responsive
+- Vanilla CSS
+- CSS Naming convention base on tailwindcss css & Material UI
+- CSS Utilities
+- Reusable components
+
+## Configuration
+
+### Deberás registrarte y obtener tu llave para poder consumir la API https://dummyapi.io
+
+Configure sus variables de entorno local
+
+```
+  env.local
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Cree un '.env.local' y cambie el valor de 'NEXT_PUBLIC_API_ID' por el que ha creado en https://dummyapi.io previamente al crear su cuenta.
+2. Tambien cree dentro de su variable de entorno 'env.local' la 'NEXT_PUBLIC_API'.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Example
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```
+NEXT_PUBLIC_API_ID=exampleIDApp
+NEXT_PUBLIC_API=https://dummyapi.io/data/v1/user
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```
 
-## Learn More
+## Run
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    1. npm install
+    2. npm run dev
