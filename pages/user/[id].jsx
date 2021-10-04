@@ -60,7 +60,6 @@ const Profile = () => {
         </div>
       </Container>
     )
-  console.log('data', user || [])
 
   return (
     <Container variant="xl" padding="0">

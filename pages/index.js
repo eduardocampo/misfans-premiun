@@ -78,7 +78,6 @@ export default function Home() {
     }
   }
 
-  console.log('datasss', searchResults || [])
   return (
     <Container variant="xl" padding="0">
       <div
